@@ -1,3 +1,4 @@
+@import "bourbon/bourbon";
 @import "font";
 @import "layout";
 
@@ -20,7 +21,11 @@
 }
 
 .middleNav {
-  li a #more {
+  #divider a {
+    border-right: 1px solid white;
+    padding-right: 30px;
+  }
+  #more a{
     color: orange;
   }
   li {

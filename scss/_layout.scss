@@ -45,6 +45,7 @@ html, body {
     #line1{
       font-family: $mainFont;
       font-size: 30px;
+      padding-top: 10px;
     }
     #line2{
       font-family: $headerFont;
@@ -55,20 +56,23 @@ html, body {
       width: 300px;
       margin: 5px;
       background: white;
+      margin-bottom: 10px;
     }
   }
 }
 .middle {
   display: flex;
   flex-direction: row;
+  // flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  // align-items: flex-start;
   height: 50px;
   width: 100%;
   background: darkgrey;
   .middleNav {
+    width: 100%;
     li {
-      padding: 10px;
+      padding: 20px;
       display: inline;
       a {
         text-decoration: none;
@@ -76,34 +80,42 @@ html, body {
           text-decoration: underline;
         }
       }
+      #divider {
+        border-right: 1px solid white;
+      }
     }
   }
-  .search {
-      display: flex;
-      width: 90vw;
-      justify-content: space-around;
-      padding-top: 40px;
-      .search-field {
-        input[type=text] {
-          width: 130px;
-          box-sizing: border-box;
-          border: 2px solid #ccc;
-          border-radius: 4px;
-          font-size: 16px;
-          background-color: white;
-          background-image: url('../img/searchicon.png');
-          background-position: 5px 5px;
-          background-repeat: no-repeat;
-          padding: 12px 20px 12px 40px;
-          -webkit-transition: width 0.4s ease-in-out;
-          transition: width 0.4s ease-in-out;
-          }
-        input[type=text]:focus {
-          width: 100%;
-          }
-      }
+      .search {
+        display: flex;
+        width: 90vw;
+        padding: 0;
+        margin: 0;
+        padding-top: 6px;
+        justify-content: space-around;
+        .search-field {
+          input[type=text] {
+            width: 75%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: white;
+            background-image: url('../img/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 8px 20px 8px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            }
+          input[type=text]:focus {
+            width: 100%;
+            }
+        }
+      // }
+    // }
   }
 }
+
 .activities {
   display: flex;
   flex-direction: column;

@@ -40,7 +40,8 @@ html, body {
       text-align: center; }
     .header .welcome #line1 {
       font-family: "Open Sans", sans-serif;
-      font-size: 30px; }
+      font-size: 30px;
+      padding-top: 10px; }
     .header .welcome #line2 {
       font-family: "Merriweather", serif;
       font-size: 70px; }
@@ -48,39 +49,45 @@ html, body {
       height: 5px;
       width: 300px;
       margin: 5px;
-      background: white; }
+      background: white;
+      margin-bottom: 10px; }
 
 .middle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
   height: 50px;
   width: 100%;
   background: darkgrey; }
-  .middle .middleNav li {
-    padding: 10px;
-    display: inline; }
-    .middle .middleNav li a {
-      text-decoration: none; }
-      .middle .middleNav li a:hover {
-        text-decoration: underline; }
+  .middle .middleNav {
+    width: 100%; }
+    .middle .middleNav li {
+      padding: 20px;
+      display: inline; }
+      .middle .middleNav li a {
+        text-decoration: none; }
+        .middle .middleNav li a:hover {
+          text-decoration: underline; }
+      .middle .middleNav li #divider {
+        border-right: 1px solid white; }
   .middle .search {
     display: flex;
     width: 90vw;
-    justify-content: space-around;
-    padding-top: 40px; }
+    padding: 0;
+    margin: 0;
+    padding-top: 6px;
+    justify-content: space-around; }
     .middle .search .search-field input[type=text] {
-      width: 130px;
+      width: 75%;
       box-sizing: border-box;
       border: 2px solid #ccc;
       border-radius: 4px;
-      font-size: 16px;
+      font-size: 14px;
       background-color: white;
       background-image: url("../img/searchicon.png");
-      background-position: 5px 5px;
+      background-position: 10px 10px;
       background-repeat: no-repeat;
-      padding: 12px 20px 12px 40px;
+      padding: 8px 20px 8px 40px;
       -webkit-transition: width 0.4s ease-in-out;
       transition: width 0.4s ease-in-out; }
     .middle .search .search-field input[type=text]:focus {
@@ -127,7 +134,10 @@ html, body {
   .topNav li a {
     color: white; }
 
-.middleNav li a #more {
+.middleNav #divider a {
+  border-right: 1px solid white;
+  padding-right: 30px; }
+.middleNav #more a {
   color: orange; }
 .middleNav li {
   font-family: "Open Sans", sans-serif;
