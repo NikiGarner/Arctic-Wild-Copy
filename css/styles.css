@@ -93,35 +93,6 @@ html, body {
     .middle .search .search-field input[type=text]:focus {
       width: 100%; }
 
-.activities {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: auto; }
-  .activities .panel {
-    margin: 10px; }
-  .activities .panel:nth-child(1) img {
-    margin-top: 10px;
-    width: 100%;
-    border-radius: 5px; }
-  .activities .panel:nth-child(2) img {
-    width: 100%;
-    border-radius: 5px; }
-  .activities .panel:nth-child(3) img {
-    width: 100%;
-    border-radius: 5px; }
-  .activities .panel:nth-child(4) img {
-    width: 100%;
-    border-radius: 5px; }
-  .activities .panel:nth-child(5) img {
-    width: 100%;
-    border-radius: 5px; }
-  .activities .panel:nth-child(6) img {
-    width: 100%;
-    border-radius: 5px; }
-
 .topNav #logo {
   font-family: "Merriweather", serif;
   font-size: 30px; }
