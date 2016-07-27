@@ -1,8 +1,140 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 700px) {
+    .gallery {
+      flex-direction: column; } }
+  .gallery .panel {
+    box-shadow: 0 6px 6px -6px #000;
+    display: inline-block;
+    flex: 1;
+    height: 300px;
+    transition: all 1s; }
+  .gallery .panel:nth-child(1) {
+    flex-basis: 400px;
+    background: url("../img/home-raft.jpg"); }
+    @media only screen and (max-width: 700px) {
+      .gallery .panel:nth-child(1) {
+        flex-basis: 200px; } }
+    .gallery .panel:nth-child(1) h2:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange; }
+  .gallery .panel:nth-child(2) {
+    flex-basis: 200px;
+    background: url("../img/home-basecamp.jpg"); }
+    @media only screen and (max-width: 700px) {
+      .gallery .panel:nth-child(2) {
+        flex-basis: 200px; } }
+    .gallery .panel:nth-child(2) h2:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange; }
+  .gallery .panel:nth-child(3) {
+    flex-basis: 200px;
+    background: url("../img/home-backpacking.jpg"); }
+    @media only screen and (max-width: 700px) {
+      .gallery .panel:nth-child(3) {
+        flex-basis: 200px; } }
+    .gallery .panel:nth-child(3) h2:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange; }
+  .gallery .panel:nth-child(4) {
+    flex-basis: 200px;
+    background: url("../img/home-canoe.jpg"); }
+    @media only screen and (max-width: 700px) {
+      .gallery .panel:nth-child(4) {
+        flex-basis: 200px; } }
+    .gallery .panel:nth-child(4) h2:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange; }
+  .gallery .panel:nth-child(5) {
+    flex-basis: 200px;
+    background: url("../img/home-photo.jpg"); }
+    @media only screen and (max-width: 700px) {
+      .gallery .panel:nth-child(5) {
+        flex-basis: 200px; } }
+    .gallery .panel:nth-child(5) h2:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange; }
+  .gallery .panel:nth-child(6) {
+    flex-basis: 400px;
+    background: url("../img/home-custom.jpg"); }
+    @media only screen and (max-width: 700px) {
+      .gallery .panel:nth-child(6) {
+        flex-basis: 200px; } }
+    .gallery .panel:nth-child(6) h2:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange; }
+
+.gallery .panel:nth-child(1) a, .gallery .panel:nth-child(2) a, .gallery .panel:nth-child(3) a, .gallery .panel:nth-child(4) a, .gallery .panel:nth-child(5) a, .gallery .panel:nth-child(6) a, .middle .middleNav li a {
+  text-decoration: none;
+  color: white; }
+  .gallery .panel:nth-child(1) a:hover, .gallery .panel:nth-child(2) a:hover, .gallery .panel:nth-child(3) a:hover, .gallery .panel:nth-child(4) a:hover, .gallery .panel:nth-child(5) a:hover, .gallery .panel:nth-child(6) a:hover, .middle .middleNav li a:hover {
+    text-decoration: underline; }
+
+.gallery .panel:nth-child(1) h2, .gallery .panel:nth-child(2) h2, .gallery .panel:nth-child(3) h2, .gallery .panel:nth-child(4) h2, .gallery .panel:nth-child(5) h2, .gallery .panel:nth-child(6) h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  padding: 15px;
+  background-color: rgba(128, 128, 128, 0.7); }
+
+.gallery .panel:nth-child(1), .gallery .panel:nth-child(2), .gallery .panel:nth-child(3), .gallery .panel:nth-child(4), .gallery .panel:nth-child(5), .gallery .panel:nth-child(6) {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html, body {
   margin: 0;
   padding: 0; }
+
+.topNav #logo {
+  font-family: "Merriweather", serif;
+  font-size: 30px; }
+  .topNav #logo:hover {
+    color: orange; }
+.topNav li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: white; }
+  .topNav li a {
+    color: white; }
+
+.middleNav #divider a {
+  border-right: 1px solid white;
+  padding-right: 30px; }
+.middleNav #more a {
+  color: orange; }
+.middleNav li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: white; }
+  .middleNav li a {
+    color: white; }
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px; }
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 40px; }
 
 .header {
   display: flex;
@@ -55,74 +187,50 @@ html, body {
 .middle {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  height: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100px;
   width: 100%;
   background: darkgrey; }
+  @media only screen and (min-width: 700px) {
+    .middle {
+      height: 50px; } }
   .middle .middleNav {
-    width: 100%; }
-    .middle .middleNav li {
-      padding: 20px;
-      display: inline; }
-      .middle .middleNav li a {
-        text-decoration: none; }
-        .middle .middleNav li a:hover {
-          text-decoration: underline; }
-      .middle .middleNav li #divider {
-        border-right: 1px solid white; }
-  .middle .search {
-    display: flex;
-    width: 90vw;
+    width: 100%;
     padding: 0;
-    margin: 0;
-    padding-top: 6px;
-    justify-content: space-around; }
-    .middle .search .search-field input[type=text] {
-      width: 75%;
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-      font-size: 14px;
-      background-color: white;
-      background-image: url("../img/searchicon.png");
-      background-position: 10px 10px;
-      background-repeat: no-repeat;
-      padding: 8px 20px 8px 40px;
-      -webkit-transition: width 0.4s ease-in-out;
-      transition: width 0.4s ease-in-out; }
-    .middle .search .search-field input[type=text]:focus {
-      width: 100%; }
+    padding-left: 10px; }
+    @media only screen and (min-width: 700px) {
+      .middle .middleNav {
+        max-width: 50%; } }
+    .middle .middleNav li {
+      padding: 5px;
+      display: inline; }
+      @media only screen and (min-width: 700px) {
+        .middle .middleNav li {
+          padding: 20px; } }
 
-.topNav #logo {
-  font-family: "Merriweather", serif;
-  font-size: 30px; }
-  .topNav #logo:hover {
-    color: orange; }
-.topNav li {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  color: white; }
-  .topNav li a {
-    color: white; }
-
-.middleNav #divider a {
-  border-right: 1px solid white;
-  padding-right: 30px; }
-.middleNav #more a {
-  color: orange; }
-.middleNav li {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  color: white; }
-  .middleNav li a {
-    color: white; }
-
-h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px; }
-
-h2 {
-  font-family: "Merriweather", serif;
-  font-size: 40px; }
+.search {
+  display: flex;
+  width: 50vw;
+  padding: 0;
+  margin: 0;
+  padding-top: 6px;
+  margin-bottom: 10px;
+  justify-content: center; }
+  .search .search-field input[type=text] {
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url("../img/searchicon.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; }
+  .search .search-field input[type=text]:focus {
+    width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

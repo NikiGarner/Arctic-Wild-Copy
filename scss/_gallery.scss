@@ -1,0 +1,117 @@
+.gallery {
+display:flex;
+flex-direction: row;
+flex-wrap:wrap;
+@media only screen and (max-width: 700px) {
+  flex-direction: column;
+}
+  .panel {
+  box-shadow:0 6px 6px -6px #000;
+  display:inline-block;
+  flex:1;
+  height:300px;
+  transition: all 1s;
+  }
+  .panel:nth-child(1) {
+  @extend %background-style;
+  flex-basis: 400px;
+  background: url("../img/home-raft.jpg");
+  @media only screen and (max-width: 700px) {
+    flex-basis: 200px;
+  }
+  h2 {
+    @extend %trip-text;
+    &:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange;
+    }
+  }
+  @extend %link-style;
+  }
+  .panel:nth-child(2) {
+  @extend %background-style;
+  flex-basis: 200px;
+  background: url("../img/home-basecamp.jpg");
+  @media only screen and (max-width: 700px) {
+    flex-basis: 200px;
+  }
+  h2 {
+    @extend %trip-text;
+    &:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange;
+    }
+  }
+    @extend %link-style;
+  }
+  .panel:nth-child(3) {
+  @extend %background-style;
+  flex-basis: 200px;
+  background: url("../img/home-backpacking.jpg");
+  @media only screen and (max-width: 700px) {
+    flex-basis: 200px;
+  }
+  h2 {
+    @extend %trip-text;
+    &:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange;
+    }
+  }
+    @extend %link-style;
+  }
+  .panel:nth-child(4) {
+  @extend %background-style;
+  flex-basis: 200px;
+  background: url("../img/home-canoe.jpg");
+  @media only screen and (max-width: 700px) {
+    flex-basis: 200px;
+  }
+  h2 {
+    @extend %trip-text;
+    &:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange;
+    }
+  }
+    @extend %link-style;
+  }
+  .panel:nth-child(5) {
+  @extend %background-style;
+  flex-basis: 200px;
+  background: url("../img/home-photo.jpg");
+  @media only screen and (max-width: 700px) {
+    flex-basis: 200px;
+  }
+  h2 {
+    @extend %trip-text;
+    &:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange;
+    }
+  }
+    @extend %link-style;
+  }
+  .panel:nth-child(6) {
+  @extend %background-style;
+  flex-basis: 400px;
+  background: url("../img/home-custom.jpg");
+  @media only screen and (max-width: 700px) {
+    flex-basis: 200px;
+  }
+  h2 {
+    @extend %trip-text;
+    &:hover {
+      transform: skewY(-10deg);
+      transition: all 1s;
+      background: orange;
+    }
+  }
+    @extend %link-style;
+  }
+}

@@ -1,51 +1,6 @@
 @import "bourbon/bourbon";
 @import "font";
-@import "layout";
-
-.topNav{
-  #logo {
-    font-family: $headerFont;
-    font-size: 30px;
-    &:hover {
-      color: orange;
-    }
-  }
-  li {
-    font-family: $mainFont;
-    font-size: 15px;
-    color: white;
-    a {
-      color: white;
-    }
-  }
-}
-
-.middleNav {
-  #divider a {
-    border-right: 1px solid white;
-    padding-right: 30px;
-  }
-  #more a{
-    color: orange;
-  }
-  li {
-    font-family: $mainFont;
-    font-size: 15px;
-    color: white;
-    a {
-      color: white;
-    }
-  }
-}
-
-
-
-h1 {
-  font-family: $mainFont;
-  font-size: 20px;
-}
-
-h2 {
-  font-family: $headerFont;
-  font-size: 40px;
-}
+@import "gallery";
+@import "mixins";
+@import "base";
+@import "nav";
