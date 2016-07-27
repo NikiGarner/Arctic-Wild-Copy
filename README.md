@@ -5,11 +5,11 @@
 #### By Niki Garner
 
 ## Description
-This is a page that is a personal copy  of the site Arctic Wild. This site was created using flexbox for major styling. Also, the site features transitions and transforms. 
+This is a page that is a personal copy  of the site Arctic Wild. This site was created using flexbox for major styling. Also, the site features transitions and transforms.
 
 ## Setup/Installation Requirements
 
-* _First, link to my github repository https://github.com/NikiGarner/Artic-Wild-Copy.git
+* _First, link to my github repository https://github.com/NikiGarner/Arctic-Wild-Copy.git
 * _replicate my site to your desktop_
 * _next, perform git clone in the terminal_
 * _then, perform git fetch_
